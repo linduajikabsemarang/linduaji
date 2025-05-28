@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinduAji</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #fff; /* Teks berwarna putih */
+            margin: 0;
+            padding: 0;
+            /* Menambahkan gambar latar belakang */
+            background-image: url('background.jpg'); /* Ganti dengan lokasi gambar Anda */
+            background-size: cover; /* Gambar menutupi seluruh halaman */
+            background-position: center center; /* Posisi gambar di tengah */
+            background-attachment: fixed; /* Agar gambar tetap saat scroll */
+        }
+        header {
+            background-color: rgba(247, 198, 0, 0.8); /* Kuning transparan */
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            width: 150px;
+            height: auto;
+        }
+        nav {
+            background-color: #222;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #F7C600;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 40px;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2.5em;
+            color: #F7C600;
+            margin-bottom: 20px;
+        }
+        .about-section, .mission-section, .gallery-section, .registration-section {
+            margin-bottom: 40px;
+        }
+        .about-text, .mission-text {
+            font-size: 1.2em;
+            line-height: 1.8em;
+            text-align: justify;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+ .form-container {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .form-container input, .form-container select, .form-container textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+        }
+        .form-container input[type="submit"] {
+            background-color: #F7C600;
+            border: none;
+            color: #111;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: #f1a800;
+        }
+
+        /* Tabel Pendaftaran */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #F7C600; /* Warna kuning untuk tabel */
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        table th, table td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #fff;
+        }
+        table th {
+            background-color: #DFAF00; /* Warna kuning lebih gelap untuk header */
+            color: #fff;
+        }
+        table td {
+            background-color: #FFF2A6; /* Warna kuning muda untuk baris tabel */
+            color: #111;
+        }
+        table tr:hover {
+            background-color: #f1e100; /* Warna kuning terang ketika hover */
+        }
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="logo-lindu-aji.png" alt="Logo Organisasi"> <!-- Ganti dengan logo yang sesuai -->
+        <h1>Lindu Aji Kabupaten Semarang</h1>
+        <p>Visi dan Misi untuk Masyarakat yang Lebih Baik</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">Tentang Kami</a>
+        <a href="#mission">Misi Kami</a>
+        <a href="#gallery">Galeri Kegiatan</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        
+        <!-- Tentang Kami -->
+        <section id="about" class="about-section">
+            <h2 class="section-title">Tentang Kami</h2>
+            <p class="about-text">
+                Lindu Aji adalah sebuah organisasi masyarakat (ormas) yang fokus pada kegiatan kemanusiaan dan sosial, serta berkolaborasi dengan pemerintah untuk memberikan manfaat bagi masyarakat. Ormas ini memiliki peran penting dalam pemberdayaan masyarakat, terutama di wilayah Kabupaten Semarang.
+            </p>
+        </section>
+        
+        <!-- Misi Kami -->
+        <section id="mission" class="mission-section">
+            <h2 class="section-title">Misi Kami</h2>
+            <p class="mission-text">
+                Misi kami adalah untuk berkolaborasi dengan pemerintah dalam memberikan manfaat bagi masyarakat, khususnya melalui kegiatan kemanusiaan dan pemberdayaan.
+            </p>
+        </section>
+
+        <!-- Galeri Kegiatan -->
+        <section id="gallery" class="gallery-section">
+            <h2 class="section-title">Galeri Kegiatan</h2>
+            <div class="gallery">
+                <img src="kegiatan1.jpg" alt="Kegiatan 1">
+                <img src="kegiatan2.jpg" alt="Kegiatan 2">
+                <img src="kegiatan3.jpg" alt="Kegiatan 3">
+                <img src="kegiatan4.jpg" alt="Kegiatan 4">
+                <img src="kegiatan5.jpg" alt="Kegiatan 5">
+                <img src="kegiatan6.jpg" alt="Kegiatan 6">
+ <!-- Video kegiatan (YouTube embed) -->
+                <iframe width="100%" height="315" src="https://youtu.be/kXI-EmUXY68?si=Gs-eaUJW7NhqpJRO" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="100%" height="315" src="https://youtu.be/DPru6or4MZ8?si=RiEocPDpdh78_OPA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="100%" height="315" src="https://youtu.be/5E58NP1-BRo?si=Y3_8nrSX-PCs4fC8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="100%" height="315" src="https://youtu.be/R0wCgSYGyTU?si=Ki2AUpRxSgvriKPo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+<!-- Pendaftaran -->
+        <section id="registration" class="registration-section">
+            <h2 class="section-title">Pendaftaran Anggota Lindu Aji</h2>
+            <p class="about-text">Silakan mengisi formulir berikut untuk mendaftar sebagai Anggota Lindu Aji Kabupaten Semarang.</p>
+            <div class="form-container">
+                <form action="#" method="POST">
+                    <label for="fullName">Nama Lengkap:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+
+                    <label for="idNumber">Nomor KTP:</label>
+                    <input type="text" id="idNumber" name="idNumber" required>
+
+                    <label for="dob">Tanggal Lahir:</label>
+                    <input type="date" id="dob" name="dob" required>
+
+                    <label for="address">Alamat:</label>
+                    <textarea id="address" name="address" rows="4" required></textarea>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Nomor Telepon:</label>
+                    <input type="text" id="phone" name="phone" required>
+
+                    <label for="gender">Jenis Kelamin:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Laki-laki</option>
+                        <option value="female">Perempuan</option>
+                    </select>
+
+                    <input type="submit" value="Daftar">
+                </form>
+            </div>
+        </section>
+
+        <!-- Kontak -->
+        <section id="contact">
+            <h2 class="section-title">Kontak Kami</h2>
+            <p class="about-text">
+                Untuk informasi lebih lanjut, silakan hubungi kami di: Facebook: DPC Lindu Aji Kab Semarang | Telepon: 089530578323
+            </p>
+            <ul>
+                <li>Facebook: DPC Lindu Aji Kab Semarang</li>
+                <li>Telepon: 089530578323</li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Lindu Aji Kabupaten Semarang. Semua hak cipta dilindungi.</p>
+    </footer>
+
+</body>
+</html>
