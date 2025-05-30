@@ -1,43 +1,56 @@
-/* Style yang digunakan pada semua halaman */
-body {
-    font-family: Arial, sans-serif;
+/* Navigation Bar */
+.navbar {
+    background-color: #748101; /* Dark Blue */
+    padding: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-header {
-    background-color: #F7C600;
-    text-align: center;
-    padding: 20px;
+.navbar li {
+    margin: 0;
 }
 
-header img {
-    width: 100px;
-    height: auto;
-}
-
-h1 {
-    font-size: 2em;
-    color: #333;
-}
-
-nav {
-    background-color: #222;
-    text-align: center;
-    padding: 10px;
-}
-
-nav a {
+.navbar a {
+    display: block;
+    padding: 15px 25px;
     color: #fff;
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-nav a:hover {
-    text-decoration: underline;
+.navbar a:hover,
+.navbar a:focus {
+    background-color: #dff708; /* Bright Blue on hover */
+    color: #fff;
 }
+
+.navbar a.active {
+    background-color: #005577; /* Highlight active page */
+    color: #fff;
+    border-bottom: 3px solid #ffaa00;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        text-align: center;
+        padding: 12px;
+    }
+}
+
 
 .container {
     padding: 20px;
